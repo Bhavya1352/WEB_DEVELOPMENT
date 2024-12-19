@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --primary-color:brown;
+            --custom-width:330px;
+        }
+        .container{
+        background-color: purple;
+        border: 2px solid black;
+        height:650px;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        }
+         .box{
+            
+            background-color:aqua;
+            border: 1px solid var(--primary-color);
+            height:330px;
+            width:var(--custom-width);
+            margin:2px; padding:2px;
+            box-shadow: 10px 15px red, 20px 15px goldenrod;
+         }
+         #head1{
+            /* text-shadow:2px 3px 4px indianred; */
+               text-shadow :purple 12px 13px 2px;
+         }
+         </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="box">
+            <h2 id="head1">welcome to codehelp</h2>
+            <img src="download.jpg"/>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, culpa!
+      </p>
+        </div>
+</body>
+</html>
