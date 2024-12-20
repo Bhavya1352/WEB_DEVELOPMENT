@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box;
+        }
+        .container{
+            background-color: aqua;
+            border: 5px solid black;
+            width:100vh;
+            height: 100vh;
+        }
+        .box{
+            width: 350px;
+            height:250px;
+            background-color: blueviolet;
+            border: 2px solid salmon;
+            border-radius: 4px;
+            margin:10px;
+            border: 3px solid brown;
+            position: relative;
+            /* animation-name:rightmovement; */
+            /* animation-duration: 6s; */
+            /* animation-iteration-count: infinite; */
+            /* animation-delay: 2s; */
+            /* animation-direction: alternate-reverse; */
+            /* animation-fill-mode: backwards; */
+            animation:6s rightmovement infinite 2s alternate-reverse backwards;
+        }
+        @keyframes rightmovement{
+            from{
+                top:0;
+                left:0;
+            }
+            to{
+                top:0;
+               [
+
+               ] left:1500px;
+            }
+
+        }
+        #circle{
+         width: 5%;
+            height:20px;
+            background-color: blueviolet;
+            border: 2px solid salmon;
+            border-radius: 20px;
+            margin:10px;
+            top:5000px;
+            left:1000px;
+          position:relative;
+        }
+            /* animation-na
+
+        </style>
+
+<body>
+  <div class="container">
+    <div class="box"></div>
+    <div id="circle"></div>
+
+  </div>
+</body>
+</head>
+</html>
