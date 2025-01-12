@@ -28,17 +28,22 @@ body{
     margin-bottom: 1rem;
     display: grid;
     gap:2rem;
-    grid-template-columns: repeat(4,fr);
-    grid-template-rows: repeat(2,fr);
+
 }
 .card1container{
 
-    height:700vh;
-    width: 800vw;
     display:flex;
     border:1px solid black;
     flex-direction: column;
     border-radius:2px;
+}
+.card_image_container{
+    position: relative;
+}
+.cardtitlecontainer{
+    gap: 1rem;
+font-size: 1rem;
+font-weight: 100;
 }
 
 
