@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .container{
+            background-color: beige;
+            padding:5rem;
+            display :grid;
+            grid-template-columns: repeat(3,1fr);
+        
+        }
+            .itens{
+                padding: 2rem;
+                height:250px;
+                width:250px;
+                background-color: aquamarine;
+                border: 2px solid black;
+            }
+            #rotatex:hover{
+                transform:rotatex(45deg)
+            }
+            #rotatey:hover{
+                transform:rotatey(-45deg)
+            }
+            #rotatez:hover{
+                transform: rotatez(45deg);
+            }
+
+            #translatex:hover{
+                transform:translatex(100px)
+            }
+            #translatey:hover{
+                transform:translatey(-100px);
+            }
+            #translatez:hover{
+                transform: perspective(300px) translatez(100px);
+            }
+            #scalex:hover{
+                transform:scalex(1.5);
+            }
+            #scaley:hover{
+                transform: scaley(-1.5);
+            }
+            #scalez:hover{
+                transform: perspective(300px) rotatey(30deg) scalez(5);
+            }
+        
+            
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="itens" id="rotatex">rotatex</div>
+        <div class="itens" id="rotatey">rotatey</div>
+        <div class="itens" id="rotatez">rotatez</div>
+        <div class="itens" id="scalex">scalex</div>
+        <div class="itens" id="scaley">scaley</div>
+        <div class="itens" id="scalez">scalez</div>
+        <div class="itens" id="translatex">translatex</div>
+        <div class="itens" id="translatey">translatey</div>
+        <div class="itens" id="translatez">translatez</div>
+    </div>
+</body>
+</html>
