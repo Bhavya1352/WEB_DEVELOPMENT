@@ -1,0 +1,63 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root{
+    --lightcoral: #F08080;
+    --blue: #3c8ead; 
+    --yellow:#f6fa0b ;
+    --purple: #D8BFD8;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+body{
+    height: 100vh;
+    background-color: beige;
+    text-align: center;
+    padding: 2rem;
+}
+.logo-image{
+    height:20px;
+    width: 25px;
+}
+.content{
+    max-width:1200px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding:1rem;
+}
+.logo-text{
+    font-weight: 600;
+    color:black;
+    font-size: 2rem;
+}
+.navedit{
+    display: flex;
+    gap: 1.5rem;
+    font-weight: 300;
+}
+.navlink{
+    color: black;
+    transform: color 0.1s;
+}
+.navlink:hover{
+    color: grey;
+}
+
+.contact-button{
+    border: none;
+    border-radius: 2px;
+    transform: all 0.1s;
+    font-weight: 300;
+    background-color: var(--blue);
+    padding:1rem 1rem;
+    color: aliceblue;
+}
+.contact-button:hover{
+    background-color: blue ;
+}
