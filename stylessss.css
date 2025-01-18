@@ -61,3 +61,140 @@ body{
 .contact-button:hover{
     background-color: blue ;
 }
+.mainsection{
+    max-width: 1260px;
+    display: flex;
+    flex-direction: row;
+    gap:1rem;
+    padding:0.5rem;
+    align-items: center;
+    margin: 0 auto;
+    
+
+}
+.leftside{
+    text-align: center;
+    animation: slidefromleft is ease forwards;
+    /* opacity: 0; */
+}
+
+
+@keyframes slidefromleft {
+
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+100% {
+    opacity: 1;
+    transform: translateX(0);
+}
+}
+.text1{
+display: flex;
+size: 2rem;
+flex-direction: row;
+font-weight: 300;
+color: blue;
+margin-left: 40px;
+
+}
+.topic{
+font-size:2.5rem;
+max-width: 400px;
+margin-top: 0.5rem;
+color: black
+}
+.description{
+    margin-top: 1rem;
+    /* padding: 1.5rem; */
+    max-width: 690px;
+    font-size: 1.13rem;
+    color:grey;
+}
+.buttoncollection{
+    display: flex;
+    flex-direction: row;
+    padding:1rem;
+    gap:2rem;
+    margin-top: 1rem;
+}
+.Startbutton,
+.Tourbutton{
+    border:none;
+    border-radius: 3px;
+    transform: all 0.1s;
+    font-weight: 300;
+    background-color: blue;
+    padding:1rem 1rem;
+    color: aliceblue;
+}
+.Tourbutton:hover{
+    background-color:plum;
+}
+.Startbutton:hover{
+    background-color: #3c8ead;
+}
+.rightside{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-image{
+    border: none;
+    border-radius: 0.625;
+    height:57vh;
+    box-shadow: 0px 4px 8px rgb(0,0,0,0.1);
+    overflow: hidden;
+}
+@media screen and( min-width:768px){
+.mainsection{
+    flex-direction: row;
+}
+
+.leftside{
+    max-width: 50%;
+    text-align:left;
+}
+.topic{
+    padding-left: 0%;
+}
+.buttoncollection{
+    justify-content: start;
+    padding:0;
+}
+}
+.companycontainer{
+    display: flex;
+    align-items: center;
+   justify-content: center;
+   margin-top: 2rem;
+}
+.bestt{
+    justify-content: center;
+    margin-bottom: 2px;
+}
+.companygird{
+    margin-top: 20px;
+    margin-left: 490px;
+    width:40%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: #C8C8C8;	
+    gap:2rem;
+
+    border: none;
+    border-radius: 0.625rem;
+    justify-content: center;
+}
+.logo-image{
+    margin-top: 10px;
+    height: 30px;
+    width:25px;
+
+}
+.logo-text{
+    font-size: 1.5rem;
+    font-weight: 200;
+    
+}
